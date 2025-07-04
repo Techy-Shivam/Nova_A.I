@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Manufacturing+Consent&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #000000 0%, #1e1d1d 75%);
+  background-size: 400% 400%;
+  animation: bg-anim 4s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+@keyframes bg-anim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#main .animation {
+  height: 320px;
+  width: 300px;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  padding: 10px 15px;
+  box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff;
+  background-color: rgba(79, 82, 84, 0.4274509804);
+}
+#main .animation img {
+  width: 18vw;
+}
+#main h1 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 35px;
+}
+#main h1 #name {
+  color: rgb(255, 17, 187);
+  font-size: 52px;
+}
+#main h1 #va {
+  font-size: 50px;
+  color: aqua;
+}
+#main #voice {
+  width: 150px;
+  display: none;
+}
+#main #btn {
+  font-family: "PT Serif", serif;
+  width: 30%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, aqua, rgb(255, 17, 187));
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+  color: white;
+  border-radius: 25px;
+  font-size: 22px;
+  border: none;
+  transition: all 0.3s ease;
+}
+#main #btn img {
+  width: 30px;
+}
+#main #btn:hover {
+  background: linear-gradient(to right, rgb(255, 17, 187), aqua);
+  scale: 1.1;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=style.css.map */
