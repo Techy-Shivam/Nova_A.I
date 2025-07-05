@@ -27,7 +27,7 @@ function wishhMe(){
     }
 }
 window.addEventListener('load',()=>{
-// wishhMe()
+wishhMe()
 })
 
 let speechrecog=window.SpeechRecognition || window.webkitSpeechRecognition
@@ -90,6 +90,10 @@ function takeCommand(message){
     else if(message.includes("date")){
         let date=new Date().toLocaleString(undefined,{day:"numeric",month:"short"})
         speech(date)
+    }
+     else if(message.includes("open spotify")){
+        speech("opening spotify")
+        window.open("spotify://");
     }
     else if (message.toLowerCase().includes("youtube")) {
 
